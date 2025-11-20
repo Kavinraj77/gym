@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phoenix Aark Gym</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+    header {
+      background: #d60000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      background: #ffffff;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 2px solid #d60000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #d60000;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(rgba(214,0,0,0.7), rgba(214,0,0,0.7)), url('gym.jpg');
+      background-size: cover;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #d60000;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .plans {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .plan {
+      width: 260px;
+      border: 2px solid #d60000;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background: #d60000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* GALLERY */
+    #gallery-box {
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      height: 500px;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 3px solid #d60000;
+    }
+
+    .fadeSlide {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #d60000;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      font-size: 22px;
+      cursor: pointer;
+      border-radius: 6px;
+      z-index: 20;
+    }
+
+    .prev-btn { left: 10px; }
+    .next-btn { right: 10px; }
+  </style>
+</head>
+<body>
+  <header>PHOENIX AARK GYM</header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#plans">Plans</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">NO EXCUSES • JUST RESULTS</div>
+
+  <section class="section" style="background:#fff; padding-top:20px;">
+    <h2 style="color:#d60000;">Motivation Quotes</h2>
+    <p>• Push Harder Than Yesterday</p>
+    <p>• Sweat Now, Shine Later</p>
+    <p>• Train Insane or Remain The Same</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <p>Modern equipment • Personal training • Weight loss • Strength building • Cardio area • Crossfit zone</p>
+  </section>
+
+  <section class="section" id="plans">
+    <h2>Membership Plans</h2>
+
+    <h3 style="color:#d60000; margin-top:30px;">WEIGHT GAIN</h3>
+    <div class="plans">
+      <div class="plan"><h3>1 Month</h3><p>Admission: ₹400<br>Fees: ₹600<br><b>Total: ₹1000</b></p></div>
+      <div class="plan"><h3>2 Month</h3><p>Admission: ₹300<br>Fees: ₹1000<br><b>Total: ₹1300</b></p></div>
+      <div class="plan"><h3>3 Month</h3><p>Admission: ₹200<br>Fees: ₹1400<br><b>Total: ₹1600</b></p></div>
+      <div class="plan"><h3>6 Month</h3><p><b>Total: ₹2600</b></p></div>
+      <div class="plan"><h3>1 Year</h3><p><b>Total: ₹4600</b></p></div>
+    </div>
+
+    <h3 style="color:#d60000; margin-top:40px;">WEIGHT LOSS</h3>
+    <div class="plans">
+      <div class="plan"><h3>1 Month</h3><p>Admission: ₹400<br>Fees: ₹1200<br><b>Total: ₹1600</b></p></div>
+      <div class="plan"><h3>2 Month</h3><p>Admission: ₹300<br>Fees: ₹2200<br><b>Total: ₹2500</b></p></div>
+      <div class="plan"><h3>3 Month</h3><p>Admission: ₹200<br>Fees: ₹3000<br><b>Total: ₹3200</b></p></div>
+      <div class="plan"><h3>6 Month</h3><p><b>Total: ₹5400</b></p></div>
+      <div class="plan"><h3>1 Year</h3><p><b>Total: ₹9400</b></p></div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Gallery</h2>
+
+    <div id="gallery-box">
+      <img class="fadeSlide" src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg">
+      <img class="fadeSlide" src="https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg">
+      <img class="fadeSlide" src="https://images.pexels.com/photos/949129/pexels-photo-949129.jpeg">
+      <img class="fadeSlide" src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg">
+      <img class="fadeSlide" src="https://images.pexels.com/photos/2261485/pexels-photo-2261485.jpeg">
+
+      <button class="nav-btn prev-btn" onclick="prevFade()">❮</button>
+      <button class="nav-btn next-btn" onclick="nextFade()">❯</button>
+    </div>
+
+    <script>
+      let fadeIndex = 0;
+      const fadeSlides = document.getElementsByClassName("fadeSlide");
+
+      function showFade(n) {
+        for (let i = 0; i < fadeSlides.length; i++) {
+          fadeSlides[i].style.opacity = 0;
+        }
+        fadeSlides[n].style.opacity = 1;
+      }
+
+      function nextFade() {
+        fadeIndex = (fadeIndex + 1) % fadeSlides.length;
+        showFade(fadeIndex);
+      }
+
+      function prevFade() {
+        fadeIndex = (fadeIndex - 1 + fadeSlides.length) % fadeSlides.length;
+        showFade(fadeIndex);
+      }
+
+      setInterval(nextFade, 3000); // Auto slide
+      showFade(0); // Start with first image
+    </script>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Address: Ayyothiyapattinam, Salem<br>
+      Phone: +91 99947 24404<br>
+      Email: phoenixaarkgym@gmail.com
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Phoenix Aark Gym. All Rights Reserved.<br>
+    Timing: 4:30 AM – 10:00 AM | 4:30 PM – 10:00 PM
+  </footer>
+</body>
+</html>
