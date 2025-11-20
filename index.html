@@ -44,6 +44,8 @@
     .section {
       padding: 60px 20px;
       text-align: center;
+      max-width: 900px;
+      margin: auto;
     }
     .section h2 {
       color: #d60000;
@@ -80,7 +82,6 @@
       overflow: hidden;
       border: 3px solid #d60000;
     }
-
     .fadeSlide {
       width: 100%;
       height: 500px;
@@ -91,7 +92,6 @@
       opacity: 0;
       transition: opacity 1s;
     }
-
     .nav-btn {
       position: absolute;
       top: 50%;
@@ -105,9 +105,16 @@
       border-radius: 6px;
       z-index: 20;
     }
-
     .prev-btn { left: 10px; }
     .next-btn { right: 10px; }
+
+    /* Responsive iframe container */
+    #join-us iframe {
+      width: 100%;
+      min-height: 1000px;
+      border: none;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -118,6 +125,7 @@
     <a href="#services">Services</a>
     <a href="#plans">Plans</a>
     <a href="#gallery">Gallery</a>
+    <a href="#join-us">Join Us</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -197,11 +205,27 @@
     </script>
   </section>
 
+  <!-- New Join Us Section with Google Form -->
+  <section class="section" id="join-us">
+    <h2>Join Phoenix Aark Gym</h2>
+    <p>Fill out the form below to become a member. We will contact you soon!</p>
+
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSe61N_lx60nEXbIEcCV7WkTN2G04-9spKFzHDDh8J5VMJ1Mng/viewform?embedded=true" 
+      width="100%" 
+      height="1073" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      Loading…
+    </iframe>
+  </section>
+
   <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p>
       Address: Ayyothiyapattinam, Salem<br>
-      Phone: +91 99947 -----<br>
+      Phone: +91 99947 24404<br>
       Email: phoenixaarkgym@gmail.com
     </p>
   </section>
@@ -212,4 +236,3 @@
   </footer>
 </body>
 </html>
-
