@@ -234,8 +234,10 @@
     © 2025 Phoenix Aark Gym. All Rights Reserved.<br>
     Timing: 4:30 AM – 10:00 AM | 4:30 PM – 10:00 PM
   </footer>
+
+
 <script type="module">
-  // Import Firebase SDK modules
+  // Import Firebase modules from CDN
   import { initializeApp } 
     from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 
@@ -248,14 +250,15 @@
   import { getStorage } 
     from "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js";
 
-  // Your Firebase config (SEND ME YOUR CONFIG)
+  // Your Firebase configuration
   const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    projectId: "YOUR_PROJECT",
-    storageBucket: "YOUR_PROJECT.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "1:123456:web:abc"
+    apiKey: "AIzaSyDpj_lL03MKHySV-Ez3V450FvM4v-MCv00",
+    authDomain: "phoenixgym-8b13f.firebaseapp.com",
+    projectId: "phoenixgym-8b13f",
+    storageBucket: "phoenixgym-8b13f.firebasestorage.app",
+    messagingSenderId: "483962550098",
+    appId: "1:483962550098:web:8cab4a38d15229bb2c6c8b",
+    measurementId: "G-5D5FSQ85PH"
   };
 
   // Initialize Firebase
@@ -264,9 +267,6 @@
   const db = getFirestore(app);
   const storage = getStorage(app);
 </script>
-
-
-
 
   
 </body>
